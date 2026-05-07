@@ -39,9 +39,9 @@ def generate_questions(topic):
     Answer:
     """
     response = gemini_client.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=prompt
-    )
+    model=GEMINI_MODEL,
+    contents=prompt
+)
     return response.text
 
 
